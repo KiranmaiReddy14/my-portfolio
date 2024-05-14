@@ -1,6 +1,8 @@
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
+    background-color: white;
+    border: 0px;
 }
 
 .navbar ul {
@@ -10,6 +12,15 @@
 footer {
     background-color: #f2f2f2;
     padding: 25px;
+}
+
+.navbar .icon-bar {
+    background-color: black;
+    border-color: white;
+}
+
+.navbar-toggle {
+    border: 0px;
 }
 
 .button {
@@ -25,4 +36,19 @@ footer {
 
 .button1 {
     border-radius: 29px;
+    display: block;
+    margin: auto;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
+.intro {
+    font-size: 46px;
+}
+
+.iname {
+    color: #53ed6a;
+    font-size: 57px;
 }
