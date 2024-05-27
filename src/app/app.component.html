@@ -61,8 +61,8 @@
   </div><br>
 
   <div class="container-fluid bg-3 text-center">
-    <h3>Resume</h3><br>
-    <button class="button resume" (click)="viewResume()">View Resume &nbsp; 
+    <h1><b>Resume</b></h1><br>
+    <button class="button resume" (click)="viewResume()">View Resume &nbsp;
       <i class="fas fa-search"></i>
     </button>&nbsp;&nbsp;
     <a href="assets/kiranmai_chigarakula.pdf" download="kiranmai_chigarakula.pdf" class="button resume">
@@ -71,9 +71,26 @@
     </a>
   </div><br><br>
 
-  <footer class="container-fluid text-center">
-    <p>Footer Text</p>
-  </footer>
+  <div class="container-fluid bg-3 text-center body1">
+    <h1><b>Contact</b></h1><br>
+    <div class="contact" style="width: 100%">
+      <div class="name" style="margin: auto; width: 200px">
+        <input type="text" name="name" required>
+        <label for="name" class="ilabel">Name</label>
+      </div><br><br>
+      <div class="mail" style="margin: auto; width: 200px">
+        <input type="text" name="mail" required>
+        <label for="mail" class="elabel">Email</label>
+      </div><br><br>
+      <div class="message" style="margin: auto; width: 200px">
+        <textarea name="message" id="message" rows="4" required></textarea>
+        <label for="message" class="mlabel">Message</label>
+      </div><br><br>
+      <button class="button mButton" (click)="sendMessage()">Send Message &nbsp;
+        <i class="fas fa-paper-plane"></i>
+      </button><br><br><br>
+    </div>
+  </div>
 
 </body>
 

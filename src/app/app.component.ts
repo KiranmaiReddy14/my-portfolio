@@ -20,11 +20,15 @@ export class AppComponent implements OnInit {
   }
 
   toggleCollapse(): void {
-    this.collapse=!this.collapse;
+    this.collapse = !this.collapse;
   }
 
   viewResume() {
     const pdfUrl = 'assets/kiranmai_chigarakula.pdf';
     window.open(pdfUrl, '_blank');
+  }
+
+  sendMessage() {
+    console.log("Message Sent!");
   }
 }
