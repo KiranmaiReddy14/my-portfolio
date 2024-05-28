@@ -245,7 +245,7 @@ textarea {
 .message {
   position: relative;
 
-  textarea {
+  #message {
     background-color: none;
     color: #333333;
     font-size: 18px;
@@ -256,7 +256,6 @@ textarea {
     border-bottom: 1px solid #333333;
     outline: none;
   }
-
 }
 
 .ilabel,
