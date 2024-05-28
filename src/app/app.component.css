@@ -245,7 +245,7 @@ textarea {
 .message {
   position: relative;
 
-  textarea#message {
+  textarea {
     background-color: none;
     color: #333333;
     font-size: 18px;
