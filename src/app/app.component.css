@@ -208,7 +208,7 @@ a {
 .name {
   position: relative;
 
-  input[type="text"] {
+  #name {
     background-color: none;
     color: #333333;
     font-size: 1.5rem;
@@ -225,7 +225,7 @@ a {
 .mail {
   position: relative;
 
-  input[type="text"] {
+  #mail{
     background-color: none;
     color: #333333;
     font-size: 18px;
