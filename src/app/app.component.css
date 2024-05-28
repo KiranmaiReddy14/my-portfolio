@@ -217,18 +217,6 @@ a {
     border: none;
     border-radius: 0;
     border-bottom: 1px solid #333333;
-  }
-
-  input[type="text"]:focus {
-    ~.ilabel {
-      position: absolute;
-      top: 0;
-      display: block;
-      transition: 0.2s;
-      font-size: 1.3rem;
-      font-weight: 700;
-    }
-
     outline: none;
   }
 
@@ -246,17 +234,6 @@ a {
     border: none;
     border-radius: 0;
     border-bottom: 1px solid #333333;
-  }
-
-  input[type="text"]:focus {
-    ~.elabel {
-      position: absolute;
-      top: 0;
-      transition: 0.2s;
-      font-size: 1rem;
-      font-weight: 700;
-    }
-
     outline: none;
   }
 }
@@ -277,19 +254,9 @@ textarea {
     border: none;
     border-radius: 0;
     border-bottom: 1px solid #333333;
-  }
-
-  textarea#message:focus {
-    ~.mlabel {
-      position: absolute;
-      top: 0;
-      transition: 0.2s;
-      font-size: 1rem;
-      font-weight: 700;
-    }
-
     outline: none;
   }
+
 }
 
 .ilabel,
@@ -300,7 +267,7 @@ textarea {
   font-weight: normal;
   position: absolute;
   pointer-events: none;
-  left: 17%;
-  top: 10px;
+  left: 18%;
+  top: -15px;
   transition: 300ms ease all;
 }
