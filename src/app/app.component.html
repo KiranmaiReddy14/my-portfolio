@@ -75,6 +75,8 @@
 
   <div class="container-fluid bg-3 text-center body1">
     <h1><b>Contact</b></h1><br>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="bae82bed-6729-42fd-9654-567699c2a59d">
     <div class="contact" style="width: 100%">
       <div class="name" style="margin: auto; width: 50%">
         <input type="text" name="name" required>
@@ -88,10 +90,11 @@
         <textarea name="message" id="message" rows="4" required></textarea>
         <label for="message" class="mlabel">Message</label>
       </div><br><br>
-      <button class="button mButton" (click)="sendMessage()">Send Message &nbsp;
+      <button class="button mButton" type="submit">Send Message &nbsp;
         <i class="fas fa-paper-plane"></i>
       </button><br><br><br>
     </div>
+    </form>
   </div>
 
 </body>
