@@ -78,7 +78,7 @@ a {
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
   position: fixed;
   width: 100%;
-  z-index: 3;
+  z-index: 2000;
 }
 
 .header ul {
@@ -224,7 +224,7 @@ a {
 .mail {
   position: relative;
 
-  #mail{
+  #mail {
     background-color: none;
     color: #333333;
     font-size: 18px;
@@ -295,4 +295,115 @@ footer {
 
 #footer-icons a:hover {
   transform: scale(1.4);
+}
+
+#technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#technologies {
+  padding-bottom: 70px;
+}
+
+#skills {
+  flex-direction: row;
+  width: 1000px;
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #skills {
+    flex-direction: row;
+    width: 320px;
+  }
+}
+
+#skills {
+  flex-direction: row;
+}
+
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.techDiv {
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px;
+  border: 1px solid #333333;
+  margin: 6px;
+}
+
+.techTitle {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #333333;
+  color: white;
+  padding: 5px;
+}
+
+.tech {
+  width: 65px;
+  max-height: 64px;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.tech img {
+  width: 64px;
+  max-height: 70px;
+}
+
+.toolTip {
+  position: relative;
+}
+
+.toolTip .toolTipText {
+  visibility: hidden;
+  width: 120px;
+  color: #333333;
+  text-align: center;
+  font-weight: 900;
+  padding: 5px 0;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  margin-left: -60px;
+  font: 25px;
+  z-index: 0;
+}
+
+.toolTip .toolTipText::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  z-index: 1071;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.toolTip:hover .toolTipText {
+  visibility: visible;
 }
