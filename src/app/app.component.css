@@ -10,7 +10,6 @@
 }
 
 footer {
-  background-color: #f2f2f2;
   padding: 25px;
 }
 
@@ -261,7 +260,6 @@ textarea {
 .ilabel,
 .elabel,
 .mlabel {
-  color: #969696;
   font-size: 1.3rem;
   font-weight: normal;
   position: absolute;
@@ -269,4 +267,32 @@ textarea {
   left: 18%;
   top: -15px;
   transition: 300ms ease all;
+}
+
+#footer-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+  width: 320px;
+}
+
+#footer-icons a {
+  transition: transform 0.2s ease-in-out;
+}
+
+#footer-icons a:hover {
+  transform: scale(1.4);
 }
