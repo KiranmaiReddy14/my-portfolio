@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>Kiranmai Chigarakula</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -14,22 +14,25 @@
 
 <body>
 
-  <nav class="navbar navbar-inverse">
-    <header class="header">
-      <a href="" class="logo">KC</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">RESUME</a></li>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="https://github.com/KiranmaiReddy14" target="_blank">GITHUB</a></li>
-        <li><a href="https://www.linkedin.com/in/kiranmai-chigarakula-b0070618a/" target="_blank">LINKEDIN</a></li>
-      </ul>
-    </header>
+  <nav>
+    <a href="#top" id="logo">KC</a>
+    <ul class="nav-items">
+      <li><a href="#projects" id="linkProjects">Portfolio</a></li>
+      <li><a href="#aboutMe" id="linkAboutMe">About</a></li>
+      <li><a href="#resume" id="linkResume">Resume</a></li>
+      <li><a href="#contact" id="linkContact">Contact</a></li>
+      <li><a id="linkGithub" href="https://github.com/KiranmaiReddy14" target="_blank">Github</a></li>
+      <li><a id="linkLinkedIn" href="https://www.linkedin.com/in/kiranmai-chigarakula-b0070618a/"
+          target="_blank">LinkedIn</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
   </nav>
-  <div class="jumbotron" style="display:flex; height:91vh; margin: auto; width: 100%; align-items:center;">
+
+  <div class="jumbotron" id="top" style="display:flex; height:91vh; margin: auto; width: 100%; align-items:center;">
     <div class="container">
       <p class="intro">Hello! My name is</p>
       <p class="iname">Kiranmai Chigarakula.</p>
@@ -194,8 +197,10 @@
   </div>
 
 
-  <div class="container-fluid bg-3 text-center">
-    <h1><b>Resume</b></h1><br>
+  <div class="container-fluid bg-3 text-center" id="resume">
+    <div class="resumeTitle" data-aos="fade-up">
+      <h1><b>Resume</b></h1><br>
+    </div>
     <div class="info" style="width: 100%;">
       <button class="button resume" (click)="viewResume()">View Resume &nbsp;
         <i class="fas fa-search"></i>
