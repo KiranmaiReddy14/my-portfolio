@@ -14,25 +14,22 @@
 
 <body>
 
-  <nav>
-    <a href="#top" id="logo">KC</a>
-    <ul class="nav-items">
-      <li><a href="#projects" id="linkProjects">Portfolio</a></li>
-      <li><a href="#aboutMe" id="linkAboutMe">About</a></li>
-      <li><a href="#resume" id="linkResume">Resume</a></li>
-      <li><a href="#contact" id="linkContact">Contact</a></li>
-      <li><a id="linkGithub" href="https://github.com/KiranmaiReddy14" target="_blank">Github</a></li>
-      <li><a id="linkLinkedIn" href="https://www.linkedin.com/in/kiranmai-chigarakula-b0070618a/"
-          target="_blank">LinkedIn</a></li>
-    </ul>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </nav>
-
-  <div class="jumbotron" id="top" style="display:flex; height:91vh; margin: auto; width: 100%; align-items:center;">
+  <nav class="navbar navbar-inverse">
+    <header class="header">
+      <a href="" class="logo">KC</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#resume">RESUME</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="https://github.com/KiranmaiReddy14" target="_blank">GITHUB</a></li>
+        <li><a href="https://www.linkedin.com/in/kiranmai-chigarakula-b0070618a/" target="_blank">LINKEDIN</a></li>
+      </ul>
+    </header>
+    </nav>
+    <div class="jumbotron" style="display:flex; height:91vh; margin: auto; width: 100%; align-items:center;">
     <div class="container">
       <p class="intro">Hello! My name is</p>
       <p class="iname">Kiranmai Chigarakula.</p>
@@ -42,25 +39,7 @@
   </div>
 
   <div class="container-fluid bg-3 text-center">
-    <h3>Some of my Work</h3><br>
-    <div class="row">
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-    </div>
+    
   </div><br>
 
   <div id="technologies">
@@ -212,7 +191,7 @@
     </div>
   </div><br><br>
 
-  <div class="container-fluid bg-3 text-center body1">
+  <div class="container-fluid bg-3 text-center body1" id="contact">
     <h1><b>Contact</b></h1><br><br>
     <form action="https://api.web3forms.com/submit" method="POST" onsubmit="this.submit(); this.reset(); return false;">
       <input type="hidden" name="access_key" value="bae82bed-6729-42fd-9654-567699c2a59d">

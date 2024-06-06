@@ -70,13 +70,30 @@ a {
   z-index: 2000;
 }
 
-.header ul {
+nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
   background-color: #fff;
 }
+
+nav ul a:after {
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 50%;
+  width: 0;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
 
 .header li a {
   display: block;
