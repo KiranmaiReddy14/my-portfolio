@@ -20,8 +20,13 @@ export class AppComponent implements OnInit {
     });
   }
 
-  toggleCollapse(): void {
-    this.collapse = !this.collapse;
+  toggleMenu(): void {
+    const nav = document.querySelector('.nav-items');
+    if (nav) {
+        nav.classList.toggle('active');
+    } else {
+        console.error('Navigation element not found');
+    }
   }
 
   viewResume() {

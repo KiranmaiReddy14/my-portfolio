@@ -9,27 +9,31 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-
 </head>
 
 <body>
-
   <nav class="navbar navbar-inverse">
-    <header class="header">
-      <a href="" class="logo">KC</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#resume">RESUME</a></li>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="https://github.com/KiranmaiReddy14" target="_blank">GITHUB</a></li>
-        <li><a href="https://www.linkedin.com/in/kiranmai-chigarakula-b0070618a/" target="_blank">LINKEDIN</a></li>
-      </ul>
+    <header>
+      <a href="#" id="logo">KC</a>
+      <nav>
+        <ul class="nav-items">
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#resume">RESUME</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="https://github.com/KiranmaiReddy14" target="_blank">GITHUB</a></li>
+          <li><a href="https://www.linkedin.com/in/kiranmai-chigarakula-b0070618a/" target="_blank">LINKEDIN</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
-    </nav>
-    <div class="jumbotron" style="display:flex; height:91vh; margin: auto; width: 100%; align-items:center;">
+  </nav>
+
+  <div class="jumbotron" style="display:flex; height:91vh; margin: auto; width: 100%; align-items:center;">
     <div class="container">
       <p class="intro">Hello! My name is</p>
       <p class="iname">Kiranmai Chigarakula.</p>
@@ -39,7 +43,7 @@
   </div>
 
   <div class="container-fluid bg-3 text-center">
-    
+    Projects
   </div><br>
 
   <div id="technologies">
