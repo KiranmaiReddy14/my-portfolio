@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.scrollToTopOnRefresh();
+    this.setupLinkClickHandlers();
   }
 
   scrollToTopOnRefresh() {
@@ -23,10 +24,32 @@ export class AppComponent implements OnInit {
   toggleMenu(): void {
     const nav = document.querySelector('.nav-items');
     if (nav) {
-        nav.classList.toggle('active');
-    } else {
-        console.error('Navigation element not found');
+      nav.classList.toggle('active');
     }
+  }
+
+
+  setupLinkClickHandlers(): void {
+    const anchors = document.querySelectorAll('.nav-items a');
+    anchors.forEach(anchor => {
+      anchor.addEventListener('click', (e: Event) => {
+        e.preventDefault();
+
+        const targetId = (anchor.getAttribute('href') ?? '').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 70,
+            behavior: 'smooth'
+          });
+        }
+
+        const nav = document.querySelector('.nav-items');
+        if (nav) {
+          nav.classList.remove('active');
+        }
+      });
+    });
   }
 
   viewResume() {
