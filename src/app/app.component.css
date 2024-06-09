@@ -343,6 +343,7 @@ footer {
 
 #technologies {
   padding-bottom: 70px;
+  margin-top: 5%;
 }
 
 #skills {
@@ -443,4 +444,10 @@ footer {
 
 .toolTip:hover .toolTipText {
   visibility: visible;
+}
+
+.projects {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 3%;
 }
