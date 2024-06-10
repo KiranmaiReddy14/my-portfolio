@@ -25,7 +25,7 @@
           <li><a (click)="openLinkedIn()">LINKEDIN</a></li>
         </ul>
       </nav>
-      
+
       <div class="hamburger" (click)="toggleMenu()">
         <span></span>
         <span></span>
@@ -39,25 +39,34 @@
       <p class="intro">Hello! My name is</p>
       <p class="iname">Kiranmai Chigarakula.</p>
       <p class="intro">I'm a Software Engineer.</p><br><br>
-      <button class="button button1">View portfolio</button>
+      <a class="button button1" href="#about" style="text-decoration: none;">View portfolio &nbsp;
+        <i class="fas fa-arrow-right"></i>
+      </a>
     </div>
   </div>
 
-  <div class="container-fluid bg-3 text-center">
-    <h1><b>Projects</b></h1>
+  <div class="container-fluid bg-3 text-center" id="about">
     <div class="projects">
-      <h2><b>Tweet App</b></h2><br>
+      <h1><b>Projects</b></h1>
+      <div class="title">Tweet App</div>
       <img src="assets/projects/tweetapp1.png">
       <p>A robust tweet application designed to provide users with a seamless social media management experience,
         inspired by Twitter. Key features include user account management, secure login, tweet posting, and deletion.
-      </p><br>
-      <a href="">
-        <button class="button">View Code &nbsp;
-          <i class="fas fa-search"></i>
-        </button>
-      </a>
-      <h2><b>Web Portal</b></h2><br>
+      </p><br><br>
+      <a class="button" href="https://github.com/KiranmaiReddy14/My-Workspace/tree/main/TweetApp" target="_blank"
+        style="text-decoration: none;">View Code &nbsp;
+        <i class="fas fa-search"></i>
+      </a><br><br><br>
+      <div class="title">Medication Ordering Application</div><br>
       <img src="assets/projects/webportal1.png">
+      <p>The medication ordering application offers a user-friendly interface for seamless prescription management and
+        refills. Users can browse medications and receive timely refill reminders, ensuring medication
+        adherence. Key functionalities include prescription tracking, timely refill reminders, and a comprehensive
+        medication database for informed decisions. </p><br><br>
+        <a class="button" href="https://github.com/KiranmaiReddy14/My-Workspace/tree/main/webportal" target="_blank"
+        style="text-decoration: none; margin-top: 3%;">View Code &nbsp;
+        <i class="fas fa-search"></i>
+      </a><br>
     </div>
   </div><br>
 
@@ -203,7 +212,8 @@
       <button class="button resume" (click)="viewResume()">View Resume &nbsp;
         <i class="fas fa-search"></i>
       </button>&nbsp;&nbsp;
-      <a href="assets/kiranmai_chigarakula.pdf" download="kiranmai_chigarakula.pdf" class="button resume" style="width: 37%;">
+      <a href="assets/kiranmai_chigarakula.pdf" download="kiranmai_chigarakula.pdf" class="button resume"
+        style="width: 37%;">
         Download Resume &nbsp;
         <i class="fa fa-download"></i>
       </a>
