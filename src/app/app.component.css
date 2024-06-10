@@ -131,7 +131,7 @@ header #logo:hover {
   .projects {
     width: 100%;
     margin-left: 10%;
-    margin-top: 3%;
+    margin-top: 14% !important;
   }
 
   .projects img {
