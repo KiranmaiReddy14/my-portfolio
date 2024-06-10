@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +12,14 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.scrollToTopOnRefresh();
     this.setupLinkClickHandlers();
+  }
+
+  openGitHub() {
+    window.open('https://github.com/KiranmaiReddy14', '_blank');
+  }
+
+  openLinkedIn() {
+    window.open('https://www.linkedin.com/in/kiranmai-chigarakula-b0070618a/', '_blank');
   }
 
   scrollToTopOnRefresh() {

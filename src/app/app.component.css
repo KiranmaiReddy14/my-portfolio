@@ -36,6 +36,7 @@ header {
   list-style: none;
   display: flex;
   gap: 20px;
+  pointer-events: auto;
 }
 
 .nav-items.active {
@@ -54,6 +55,7 @@ header {
   padding: 5px 10px;
   position: relative;
   transition: color 0.3s;
+  pointer-events: auto;
 }
 
 .nav-items a::after {
@@ -247,7 +249,7 @@ a {
 
 .resume {
   font-size: 1em;
-  margin-top: -10px;
+  margin-top: 2%;
 }
 
 

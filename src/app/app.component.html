@@ -21,10 +21,11 @@
           <li><a href="#">ABOUT</a></li>
           <li><a href="#resume">RESUME</a></li>
           <li><a href="#contact">CONTACT</a></li>
-          <li><a href="https://github.com/KiranmaiReddy14" target="_blank">GITHUB</a></li>
-          <li><a href="https://www.linkedin.com/in/kiranmai-chigarakula-b0070618a/" target="_blank">LINKEDIN</a></li>
+          <li><a (click)="openGitHub()">GITHUB</a></li>
+          <li><a (click)="openLinkedIn()">LINKEDIN</a></li>
         </ul>
       </nav>
+      
       <div class="hamburger" (click)="toggleMenu()">
         <span></span>
         <span></span>
@@ -49,7 +50,12 @@
       <img src="assets/projects/tweetapp1.png">
       <p>A robust tweet application designed to provide users with a seamless social media management experience,
         inspired by Twitter. Key features include user account management, secure login, tweet posting, and deletion.
-      </p>
+      </p><br>
+      <a href="">
+        <button class="button">View Code &nbsp;
+          <i class="fas fa-search"></i>
+        </button>
+      </a>
       <h2><b>Web Portal</b></h2><br>
       <img src="assets/projects/webportal1.png">
     </div>
@@ -197,7 +203,7 @@
       <button class="button resume" (click)="viewResume()">View Resume &nbsp;
         <i class="fas fa-search"></i>
       </button>&nbsp;&nbsp;
-      <a href="assets/kiranmai_chigarakula.pdf" download="kiranmai_chigarakula.pdf" class="button resume">
+      <a href="assets/kiranmai_chigarakula.pdf" download="kiranmai_chigarakula.pdf" class="button resume" style="width: 37%;">
         Download Resume &nbsp;
         <i class="fa fa-download"></i>
       </a>
