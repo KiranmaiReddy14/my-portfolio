@@ -5,6 +5,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -137,6 +138,32 @@ header #logo:hover {
   .projects img {
     width: 80% !important;
   }
+
+  .about {
+    display: inline !important;
+    align-items: center;
+    justify-content: center;
+    width: 90% !important;
+    margin-left: 5% !important;
+  }
+
+  .about img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    float: none !important;
+    margin-top: 6% !important;
+  }
+
+  .about p {
+    font-size: 20px;
+    padding-left: 0px !important;
+    padding-top: 6%;
+    text-align: justify;
+    width: 90%;
+    margin-left: 5% !important;
+  }
+
 }
 
 .content {
@@ -167,6 +194,34 @@ footer {
 .jumbotron {
   background-color: white;
   position: relative;
+  background: url('/assets/bg2.webp') no-repeat center center;
+  background-size: 24%;
+  background-position: 90% 85%;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.about img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-top: 7%;
+}
+
+.about p {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 6%;
+  float: left;
+  text-align: justify;
+  margin-left: 10%;
 }
 
 @keyframes slideInFromLeft {
@@ -464,7 +519,7 @@ footer {
 }
 
 .projects img {
-  width: 50%;
+  width: 54%;
 }
 
 .projects h2 {
@@ -473,10 +528,10 @@ footer {
 }
 
 .projects p {
-  width: 80%;
-  margin-left: 10%;
+  width: 64%;
+  margin-left: 18%;
   text-align: justify;
-  margin-top: 5%;
+  margin-top: 3%;
   font-size: 1.7rem;
 }
 

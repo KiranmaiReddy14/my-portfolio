@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
           window.scrollTo({
-            top: targetElement.offsetTop - 70,
+            top: targetElement.offsetTop - 50,
             behavior: 'smooth'
           });
         }
