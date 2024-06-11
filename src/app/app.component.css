@@ -130,13 +130,18 @@ header #logo:hover {
   }
 
   .projects {
-    width: 100%;
-    margin-left: 10%;
+    width: 90% !important;
+    margin-left: 5% !important;
     margin-top: 14% !important;
   }
 
   .projects img {
     width: 80% !important;
+  }
+
+  .projects p {
+    width: 100% !important;
+    margin-left: 0% !important;
   }
 
   .about {
