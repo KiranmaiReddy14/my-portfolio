@@ -414,7 +414,9 @@ footer {
 
 #technologies {
   padding-bottom: 70px;
-  margin-top: 5%;
+  margin-top: 12%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 #skills {
