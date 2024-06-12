@@ -199,9 +199,6 @@ footer {
 .jumbotron {
   background-color: white;
   position: relative;
-  background: url('/assets/bg2.webp') no-repeat center center;
-  background-size: 24%;
-  background-position: 90% 85%;
 }
 
 .about {
