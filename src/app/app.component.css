@@ -545,3 +545,9 @@ footer {
   margin-top: 3%;
   padding-bottom: 10px;
 }
+
+.validation-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}

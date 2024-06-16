@@ -243,20 +243,23 @@
 
   <div class="container-fluid bg-3 text-center body1" id="contact">
     <h1><b>Contact</b></h1><br><br>
-    <form action="https://api.web3forms.com/submit" method="POST" onsubmit="this.submit(); this.reset(); return false;">
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="bae82bed-6729-42fd-9654-567699c2a59d">
       <div class="contact" style="width: 100%">
         <div class="name" style="margin: auto; width: 50%">
           <input type="text" name="name" id="name" required>
           <label for="name" class="ilabel">Name</label>
+          <div class="validation-message" id="name-error"></div>
         </div><br><br>
         <div class="mail" style="margin: auto; width: 50%">
-          <input type="text" name="mail" id="mail" required>
+          <input type="email" name="mail" id="mail" required>
           <label for="mail" class="elabel">Email</label>
+          <div class="validation-message" id="mail-error"></div>
         </div><br><br>
         <div class="message" style="margin: auto; width: 50%">
           <textarea name="message" id="message" rows="4" required></textarea>
           <label for="message" class="mlabel">Message</label>
+          <div class="validation-message" id="message-error"></div>
         </div><br><br>
         <button class="button mButton" type="submit">Send Message &nbsp;
           <i class="fas fa-paper-plane"></i>
