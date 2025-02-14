@@ -1,1 +1,34 @@
-<p>work works!</p>
+<div class="work-container">
+    <div 
+      class="work-card" 
+      *ngFor="let experience of experiences" 
+      (click)="openPopup(experience)"
+    >
+      <h3>{{ experience.company }}</h3>
+      <p>{{ experience.role }}</p>
+      <p>{{ experience.duration }}</p>
+    </div>
+  </div>
+  
+  <div class="popup-overlay" *ngIf="selectedExperience">
+    <div class="popup-content">
+      <span class="close-btn" (click)="closePopup()">✖</span>
+  
+      <div class="popup-header">
+        <div class="company-info">
+          <h2>{{ selectedExperience.company }}</h2>
+          <p class="role">{{ selectedExperience.role }}</p>
+          <p class="duration">{{ selectedExperience.duration }}</p>
+        </div>
+      </div>
+  
+      <div class="popup-body">
+        <ul>
+          <li *ngFor="let responsibility of selectedExperience.responsibilities">
+            {{ responsibility }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  

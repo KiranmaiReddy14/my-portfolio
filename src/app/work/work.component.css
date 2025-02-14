@@ -1,0 +1,143 @@
+.work-container {
+    display: flex;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .work-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 370px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .work-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .work-card h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .work-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: popup-show 0.3s ease-in-out;
+  }
+
+  .company-info {
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .company-info h2,
+  .company-info .role,
+  .company-info .duration {
+    margin: 0;
+    padding: 0; 
+  }
+  
+  @keyframes popup-show {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.2s;
+  }
+  
+  .close-btn:hover {
+    color: #555;
+  }
+  
+  .popup-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  
+  .company-info h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .company-info .role {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .company-info .duration {
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+  }
+
+  .popup-body {
+    text-align: left;
+  }
+  
+  .popup-body ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .popup-body ul li {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
