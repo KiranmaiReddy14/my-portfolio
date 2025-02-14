@@ -205,8 +205,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
-  margin-left: 20%;
+  width: 80%;
+  margin-left: 4%;
 }
 
 .about img {
@@ -223,7 +223,6 @@ footer {
   padding-top: 6%;
   float: left;
   text-align: justify;
-  margin-left: 10%;
 }
 
 @keyframes slideInFromLeft {

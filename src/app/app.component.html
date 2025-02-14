@@ -17,12 +17,10 @@
       <a href="#" id="logo">KC</a>
       <nav>
         <ul class="nav-items">
-          <li><a href="#projects">PORTFOLIO</a></li>
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#resume">RESUME</a></li>
+          <li><a href="#projects">PORTFOLIO</a></li>
           <li><a href="#contact">CONTACT</a></li>
           <li><a (click)="openGitHub()">GITHUB</a></li>
-          <li><a (click)="openLinkedIn()">LINKEDIN</a></li>
         </ul>
       </nav>
 
@@ -41,11 +39,55 @@
       <p class="intro">Hello! My name is</p>
       <p class="iname">Kiranmai.</p>
       <p class="intro">I'm a Software Engineer.</p><br><br>
-      <a class="button button1" href="#projects" style="text-decoration: none;">View portfolio &nbsp;
+      <a class="button button1" href="#about" style="text-decoration: none;">About Me &nbsp;
         <i class="fas fa-arrow-right"></i>
       </a>
     </div>
   </div>
+
+  <div class="container-fluid bg-3 text-center" id="about">
+    <h1 style="margin-left: 4%; margin-top: 5%;"><b>About</b></h1>
+    <div class="about">
+      <img src="assets/kiranmai.png">
+      <p>I am a passionate Software Engineer with a strong foundation in designing and building scalable,
+        high-performance applications. With experience in full-stack development, I specialize in crafting robust
+        back-end architectures while seamlessly integrating dynamic front-end interfaces. My expertise spans across
+        microservices, cloud-native solutions, and event-driven architectures, ensuring efficient, scalable, and
+        resilient systems. <br>
+
+        I thrive in developing RESTful APIs and microservices, leveraging modern frameworks and technologies to create
+        highly optimized and responsive applications. I have hands-on experience working with real-time data streaming
+        and asynchronous communication using Apache Kafka, enhancing system performance and reliability. My ability to
+        optimize databases, refactor inefficient queries, and improve response times has significantly boosted system
+        performance and user experience. <br>
+
+        On the front end, I enjoy building interactive and engaging user interfaces using modern JavaScript frameworks
+        like React and Angular. My commitment to writing clean, maintainable code is backed by my proficiency in testing
+        frameworks, ensuring high code quality through robust unit, integration, and behavior-driven testing practices.
+        <br>
+
+        Beyond coding, I find joy in music, cooking, and reading. Exploring different genres, experimenting with new
+        recipes, and getting lost in a good book keep me inspired and creative. Whether it's a captivating novel or a
+        deep dive into technology, I love continuous learning in all aspects of life. <br>
+
+        I am constantly exploring innovative solutions to enhance application performance, streamline workflows, and
+        improve overall system scalability. Whether it's optimizing backend efficiency, refining frontend
+        responsiveness, or architecting cloud-based solutions, I am dedicated to delivering high-quality software that
+        drives impact. <br><br>
+        <br>Let's build something amazing together!
+      </p>
+    </div>
+  </div> <br><br><br>
+
+  
+  <div class="container-fluid bg-3 text-center" id="education">
+    <div class="title" data-aos="fade-up">
+      <h1><b>Education</b></h1><br>
+    </div>
+    <div class="info" style="width: 100%;">
+      <app-education></app-education>
+    </div>
+  </div><br><br>
 
   <div class="container-fluid bg-3 text-center" id="projects">
     <div class="projects">
@@ -74,22 +116,7 @@
         <i class="fas fa-search"></i>
       </a><br>
     </div>
-  </div><br>
-
-  <div class="container-fluid bg-3 text-center" id="about">
-    <h1 style="margin-left: 4%; margin-top: 5%;"><b>About</b></h1>
-    <div class="about">
-      <img src="assets/kiranmai.png">
-      <p>Hi, I'm Kiranmai Chigarakula, a passionate software engineer with a flair for innovation and problem-solving.
-        With
-        a Master's degree in Computer Science from Texas A&M University - Kingsville and hands-on experience at
-        Cognizant, I thrive
-        in
-        dynamic environments where I can leverage my expertise in Java, Spring Boot, and Angular to create impactful
-        solutions. When I'm not coding, you'll find me exploring online gaming or experimenting with new
-        recipes in the kitchen. Let's build something amazing together!</p>
-    </div>
-  </div>
+  </div><br><br><br>
 
   <div id="technologies">
     <div id="techTitle" style="padding-bottom: 30px;">
@@ -225,22 +252,6 @@
   </div>
 
 
-  <div class="container-fluid bg-3 text-center" id="resume">
-    <div class="resumeTitle" data-aos="fade-up">
-      <h1><b>Resume</b></h1><br>
-    </div>
-    <div class="info" style="width: 100%;">
-      <button class="button resume" (click)="viewResume()">View Resume &nbsp;
-        <i class="fas fa-search"></i>
-      </button>&nbsp;&nbsp;
-      <a href="assets/kiranmai_chigarakula.pdf" download="kiranmai_chigarakula.pdf" class="button resume"
-        style="width: 37%;">
-        Download Resume &nbsp;
-        <i class="fa fa-download"></i>
-      </a>
-    </div>
-  </div><br><br>
-
   <div class="container-fluid bg-3 text-center body1" id="contact">
     <h1><b>Contact</b></h1><br><br>
     <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
@@ -272,18 +283,17 @@
 
 <footer>
   <div id="footer-icons">
-    <a href="mailto:chigarakulakiranmai1999@gmail.com" onmouseover="this.href=this.href.replace(/[zyx]/g,'');"
-      target="_blank">
+    <a href="mailto:kiranmaic14@gmail.com" onmouseover="this.href=this.href.replace(/[zyx]/g,'');" target="_blank">
       <img src="assets/email.png">
     </a>
-    <a href="https://www.linkedin.com/in/kiranmai-chigarakula-b0070618a/" target="_blank">
+    <a href="https://www.linkedin.com/in/kiranmai-reddy-b0070618a/" target="_blank">
       <img src="assets/linkedin.png">
     </a>
     <a href="https://github.com/KiranmaiReddy14" target="_blank">
       <img src="assets/github.png">
     </a>
   </div>
-  <div id="copyright">&#169; <span id="year"></span> Kiranmai Chigarakula. All rights reserved.</div>
+  <div id="copyright">&#169; <span id="year"></span> Kiranmai. All rights reserved.</div>
 </footer>
 
 </html>

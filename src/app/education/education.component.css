@@ -1,0 +1,44 @@
+.education-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .education-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 160px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .education-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .edu-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .edu-content h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .edu-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
