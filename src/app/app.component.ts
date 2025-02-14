@@ -87,10 +87,6 @@ export class AppComponent implements OnInit {
     window.open('https://github.com/KiranmaiReddy14', '_blank');
   }
 
-  openLinkedIn() {
-    window.open('https://www.linkedin.com/in/kiranmai-chigarakula-b0070618a/', '_blank');
-  }
-
   scrollToTopOnRefresh() {
     window.addEventListener('beforeunload', () => {
       window.scrollTo(0, 0);
@@ -128,9 +124,10 @@ export class AppComponent implements OnInit {
     });
   }
 
-  viewResume() {
-    const pdfUrl = 'assets/kiranmai_chigarakula.pdf';
-    window.open(pdfUrl, '_blank');
+  activeAward: number | null = null;
+
+  toggleDescription(awardId: number): void {
+    this.activeAward = this.activeAward === awardId ? null : awardId;
   }
 
 }

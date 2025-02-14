@@ -262,8 +262,45 @@
       </div>
 
     </div>
-  </div>
+  </div> <br><br><br>
 
+  <div class="container-fluid bg-3 text-center" id="work">
+    <div class="title" data-aos="fade-up">
+      <h1><b>Awards</b></h1><br>
+    </div>
+    <div class="info" style="width: 100%;">
+      
+      <div class="award-container">
+        <div class="award-card" (click)="toggleDescription(1)">
+          <img src="assets/education/award.png" alt="Cheer Award Logo" class="award-logo" />
+          <div class="award-content">
+            <h3>Cheer Award - Working as One</h3>
+            <p>🏆 Awarded By: Cognizant</p>
+            <p>📅 Date: May 2024</p>
+      
+            <div class="award-details" [ngClass]="{ 'show': activeAward === 1 }">
+              <p>⭐ Recognized for outstanding teamwork and collaboration.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="award-card" (click)="toggleDescription(2)">
+          <img src="assets/education/award.png" alt="Cheer Award Logo" class="award-logo" />
+          <div class="award-content">
+            <h3>Cheer Award - Always Striving, Never Settling</h3>
+            <p>🏆 Awarded By: Cognizant</p>
+            <p>📅 Date: August 2024</p>
+      
+            <div class="award-details" [ngClass]="{ 'show': activeAward === 2 }">
+              <p>⭐ Recognized for continuous improvement and excellence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div><br><br><br> <br><br>
 
   <div class="container-fluid bg-3 text-center body1" id="contact">
     <h1><b>Contact</b></h1><br><br>

@@ -550,3 +550,72 @@ footer {
   font-size: 0.8em;
   margin-top: 5px;
 }
+
+.award-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.award-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.award-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.award-logo {
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.award-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.award-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.award-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+/* Hidden state */
+.award-details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: max-height 0.4s ease-out, opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+/* Visible state */
+.award-details.show {
+  max-height: 100px;
+  opacity: 1;
+  transform: scaleY(1);
+}
