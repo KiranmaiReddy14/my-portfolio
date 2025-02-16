@@ -103,6 +103,49 @@ header #logo:hover {
   transition: 0.4s;
 }
 
+.about-card {
+  background: #fff;
+  max-width: 75%;
+  margin: auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Content */
+.about-content {
+  font-size: 1.7rem; 
+  color: #333;
+  line-height: 1.8;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/* Indentation for Each Paragraph */
+.about-content p {
+  text-align: justify;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect - Slight Text Enlargement */
+.about-content p:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-card {
+    max-width: 80%;
+    padding: 35px;
+  }
+  
+  .about-content {
+    font-size: 1.5rem;
+  }
+}
+
+
 @media (max-width: 600px) {
   .nav-items {
     display: none;

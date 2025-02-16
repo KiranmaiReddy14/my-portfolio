@@ -47,39 +47,27 @@
   </div>
 
   <div class="container-fluid bg-3 text-center" id="about">
-    <h1 style="margin-left: 4%; margin-top: 5%;"><b>About</b></h1>
-    <div class="about">
-      <img src="assets/kiranmai.png">
-      <p>I am a passionate Software Development Engineer (SDE) with over three years of experience, alongside a master's
-        degree in Computer Science and a bachelor's in Computer Science and Engineering. With experience in full-stack
-        development, I specialize in crafting robust
-        back-end architectures while seamlessly integrating dynamic front-end interfaces. My expertise spans across
-        microservices, cloud-native solutions, and event-driven architectures, ensuring efficient, scalable, and
-        resilient systems. <br>
+    <h1><b>About</b></h1> <br>
+    <div class="about-card">
+      <div class="about-content">
+        <p>I’m a passionate Software Development Engineer (SDE) with 3+ years of experience and a Master’s in Computer
+          Science.. I specialize in full-stack development, focusing on scalable back-end solutions and dynamic
+          front-end interfaces. My expertise includes building microservices, cloud-native architectures, and working
+          with event-driven systems like Apache Kafka to boost application performance.</p>
 
-        I thrive in developing RESTful APIs and microservices, leveraging modern frameworks and technologies to create
-        highly optimized and responsive applications. I have hands-on experience working with real-time data streaming
-        and asynchronous communication using Apache Kafka, enhancing system performance and reliability. My ability to
-        optimize databases, refactor inefficient queries, and improve response times has significantly boosted system
-        performance and user experience. <br>
+        <p>On the front end, I create intuitive, responsive UIs using React and Angular, always ensuring clean,
+          maintainable code backed by rigorous testing practices. I'm committed to delivering high-quality, resilient
+          applications that solve real-world challenges.</p>
 
-        On the front end, I enjoy building interactive and engaging user interfaces using modern JavaScript frameworks
-        like React and Angular. My commitment to writing clean, maintainable code is backed by my proficiency in testing
-        frameworks, ensuring high code quality through robust unit, integration, and behavior-driven testing practices.
-        <br>
+        <p>Outside of tech, I love exploring new music, experimenting in the kitchen, and diving into a good book.
+          Continuous learning fuels both my personal and professional growth.</p>
 
-        Beyond coding, I find joy in music, cooking, and reading. Exploring different genres, experimenting with new
-        recipes, and getting lost in a good book keep me inspired and creative. Whether it's a captivating novel or a
-        deep dive into technology, I love continuous learning in all aspects of life. <br>
-
-        I am constantly exploring innovative solutions to enhance application performance, streamline workflows, and
-        improve overall system scalability. Whether it's optimizing backend efficiency, refining frontend
-        responsiveness, or architecting cloud-based solutions, I am dedicated to delivering high-quality software that
-        drives impact. <br><br>
-        <br>Let's build something amazing together!
-      </p>
+        <p><b>Let’s collaborate and create something amazing!</b></p>
+      </div>
     </div>
   </div> <br><br><br>
+
+
 
 
   <div class="container-fluid bg-3 text-center" id="education">
@@ -269,7 +257,7 @@
       <h1><b>Awards</b></h1><br>
     </div>
     <div class="info" style="width: 100%;">
-      
+
       <div class="award-container">
         <div class="award-card" (click)="toggleDescription(1)">
           <img src="assets/education/award.png" alt="Cheer Award Logo" class="award-logo" />
@@ -277,28 +265,28 @@
             <h3>Cheer Award - Working as One</h3>
             <p>🏆 Awarded By: Cognizant</p>
             <p>📅 Date: May 2024</p>
-      
+
             <div class="award-details" [ngClass]="{ 'show': activeAward === 1 }">
               <p>⭐ Recognized for outstanding teamwork and collaboration.</p>
             </div>
           </div>
         </div>
-      
+
         <div class="award-card" (click)="toggleDescription(2)">
           <img src="assets/education/award.png" alt="Cheer Award Logo" class="award-logo" />
           <div class="award-content">
             <h3>Cheer Award - Always Striving, Never Settling</h3>
             <p>🏆 Awarded By: Cognizant</p>
             <p>📅 Date: August 2024</p>
-      
+
             <div class="award-details" [ngClass]="{ 'show': activeAward === 2 }">
               <p>⭐ Recognized for continuous improvement and excellence.</p>
             </div>
           </div>
         </div>
       </div>
-      
-      
+
+
     </div>
   </div><br><br><br> <br><br>
 
