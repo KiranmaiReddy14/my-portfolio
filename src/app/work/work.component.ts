@@ -8,9 +8,18 @@ import { Component } from '@angular/core';
 export class WorkComponent {
   experiences = [
     {
+      company: 'Goldman Sachs (Contracted through Infosys)',
+      role: 'Software Engineer',
+      duration: 'Mar 2025 – Present',
+      responsibilities: [
+        'Led backend development & real-time data streaming with Java, Spring Boot, Kafka, DB2 & Snowflake, boosting scalability and reliability.',
+        'Improved quality & delivery through automated testing, CI/CD pipelines, and performance monitoring, reducing production issues.'
+      ]
+    },
+    {
       company: 'Magellan Health',
       role: 'Full Stack Java Developer',
-      duration: 'Aug 2024 – Present',
+      duration: 'Aug 2024 – Mar 2025',
       responsibilities: [
         'Architected and deployed scalable microservices and RESTful APIs.',
         'Integrated React with the backend, reducing response times by 30%.',
